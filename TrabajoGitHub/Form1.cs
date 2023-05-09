@@ -129,20 +129,40 @@ namespace TrabajoGitHub
         {
             try
             {
-                
+                double precioH = double.Parse(txtPrecioHora.Text);
+                double horas = double.Parse(txtHorasTrabajadas.Text);
+                double sueldoBruto = 0, rSunat, sNeto;
 
+                sueldoBruto = precioH * horas;
+                rSunat = RetencionSunat(sueldoBruto);
+                sNeto = sueldoBruto - rSunat;
+
+                txtRetencionSunat2.Text = rSunat.ToString();
+                txtSueldoBruto.Text = sueldoBruto.ToString();
+                txtSueldoNeto2.Text = sNeto.ToString();
 
             }
-            catch
+            catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message + "ERROR CAMPOS VACIOS", "ADVERTENCI", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtPrecioHora.Clear();
+                txtHorasTrabajadas.Clear();
+                txtSueldoBruto.Clear();
+                txtRetencionSunat2.Clear();
+                txtSueldoNeto2.Clear();
+                txtHorasTrabajadas.Focus();
             }
 
         }
 
         private void btnLimpiar2_Click(object sender, EventArgs e)
         {
-
+            txtPrecioHora.Clear();
+            txtHorasTrabajadas.Clear();
+            txtSueldoBruto.Clear();
+            txtRetencionSunat2.Clear();
+            txtSueldoNeto2.Clear();
+            txtHorasTrabajadas.Focus();
         }
 
       
