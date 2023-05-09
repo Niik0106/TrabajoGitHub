@@ -103,6 +103,9 @@ namespace TrabajoGitHub
             return retencionafp;
         }
 
+
+
+
         public double RetencionSunat(double sueldo)
         {
             double r_sunat = 0;
