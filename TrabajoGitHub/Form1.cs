@@ -75,6 +75,23 @@ namespace TrabajoGitHub
             txtNumHijos.Focus();
         }
 
+        public double RetencionSunat(double sueldo)
+        {
+            double r_sunat = 0;
+            if (sueldo > 3500)
+            {
+                r_sunat = (sueldo - 3500) * 0.15;
+            }
+            return r_sunat;
+        }
+
+        public double SueldoNeto(double hijo, double sueldo, double retencionAFP, double retencionSunat)
+        {
+            double sueldoneto = 0;
+            sueldoneto = (sueldo - retencionSunat - retencionAFP + hijo);
+            return sueldoneto;
+        }
+
         private void btnMostrar2_Click(object sender, EventArgs e)
         {
 
