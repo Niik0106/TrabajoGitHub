@@ -75,6 +75,34 @@ namespace TrabajoGitHub
             txtNumHijos.Focus();
         }
 
+
+        public double Asignacion(int hijos)
+        {
+            double asignacion_f;
+            if (hijos > 0)
+            {
+                asignacion_f = 100;
+            }
+            else
+                asignacion_f = 0;
+            return asignacion_f;
+        }
+
+        public double RetencionAFP(string op, double sueldo)
+        {
+            double retencionafp = 0;
+            switch (op)
+            {
+                case "PRIMA": retencionafp = 0.13 * sueldo;
+                    break;
+                case "RIMAC": retencionafp = 0.115 * sueldo;
+                    break;
+                case "PROFOTURO": retencionafp = 0.124 * sueldo;
+                    break;
+            }
+            return retencionafp;
+        }
+
         public double RetencionSunat(double sueldo)
         {
             double r_sunat = 0;
