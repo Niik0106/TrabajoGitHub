@@ -58,8 +58,8 @@ namespace TrabajoGitHub
             this.txtSueldoBruto = new MaterialSkin.Controls.MaterialTextBox();
             this.btnLimpiar2 = new MaterialSkin.Controls.MaterialButton();
             this.btnMostrar2 = new MaterialSkin.Controls.MaterialButton();
-            this.materialTextBox2 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtPrecioHora = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtHorasTrabajadas = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.materialTabControl1.SuspendLayout();
@@ -402,8 +402,8 @@ namespace TrabajoGitHub
             this.tabPage3.Controls.Add(this.txtSueldoBruto);
             this.tabPage3.Controls.Add(this.btnLimpiar2);
             this.tabPage3.Controls.Add(this.btnMostrar2);
-            this.tabPage3.Controls.Add(this.materialTextBox2);
-            this.tabPage3.Controls.Add(this.materialTextBox1);
+            this.tabPage3.Controls.Add(this.txtPrecioHora);
+            this.tabPage3.Controls.Add(this.txtHorasTrabajadas);
             this.tabPage3.Controls.Add(this.materialLabel9);
             this.tabPage3.Controls.Add(this.materialLabel8);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
@@ -543,39 +543,39 @@ namespace TrabajoGitHub
             this.btnMostrar2.UseVisualStyleBackColor = true;
             this.btnMostrar2.Click += new System.EventHandler(this.btnMostrar2_Click);
             // 
-            // materialTextBox2
+            // txtPrecioHora
             // 
-            this.materialTextBox2.AnimateReadOnly = false;
-            this.materialTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox2.Depth = 0;
-            this.materialTextBox2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox2.LeadingIcon = null;
-            this.materialTextBox2.Location = new System.Drawing.Point(415, 104);
-            this.materialTextBox2.MaxLength = 50;
-            this.materialTextBox2.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox2.Multiline = false;
-            this.materialTextBox2.Name = "materialTextBox2";
-            this.materialTextBox2.Size = new System.Drawing.Size(229, 50);
-            this.materialTextBox2.TabIndex = 3;
-            this.materialTextBox2.Text = "";
-            this.materialTextBox2.TrailingIcon = null;
+            this.txtPrecioHora.AnimateReadOnly = false;
+            this.txtPrecioHora.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPrecioHora.Depth = 0;
+            this.txtPrecioHora.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtPrecioHora.LeadingIcon = null;
+            this.txtPrecioHora.Location = new System.Drawing.Point(415, 104);
+            this.txtPrecioHora.MaxLength = 50;
+            this.txtPrecioHora.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtPrecioHora.Multiline = false;
+            this.txtPrecioHora.Name = "txtPrecioHora";
+            this.txtPrecioHora.Size = new System.Drawing.Size(229, 50);
+            this.txtPrecioHora.TabIndex = 3;
+            this.txtPrecioHora.Text = "";
+            this.txtPrecioHora.TrailingIcon = null;
             // 
-            // materialTextBox1
+            // txtHorasTrabajadas
             // 
-            this.materialTextBox1.AnimateReadOnly = false;
-            this.materialTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox1.Depth = 0;
-            this.materialTextBox1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox1.LeadingIcon = null;
-            this.materialTextBox1.Location = new System.Drawing.Point(415, 30);
-            this.materialTextBox1.MaxLength = 50;
-            this.materialTextBox1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox1.Multiline = false;
-            this.materialTextBox1.Name = "materialTextBox1";
-            this.materialTextBox1.Size = new System.Drawing.Size(229, 50);
-            this.materialTextBox1.TabIndex = 2;
-            this.materialTextBox1.Text = "";
-            this.materialTextBox1.TrailingIcon = null;
+            this.txtHorasTrabajadas.AnimateReadOnly = false;
+            this.txtHorasTrabajadas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtHorasTrabajadas.Depth = 0;
+            this.txtHorasTrabajadas.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtHorasTrabajadas.LeadingIcon = null;
+            this.txtHorasTrabajadas.Location = new System.Drawing.Point(415, 30);
+            this.txtHorasTrabajadas.MaxLength = 50;
+            this.txtHorasTrabajadas.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtHorasTrabajadas.Multiline = false;
+            this.txtHorasTrabajadas.Name = "txtHorasTrabajadas";
+            this.txtHorasTrabajadas.Size = new System.Drawing.Size(229, 50);
+            this.txtHorasTrabajadas.TabIndex = 2;
+            this.txtHorasTrabajadas.Text = "";
+            this.txtHorasTrabajadas.TrailingIcon = null;
             // 
             // materialLabel9
             // 
@@ -644,8 +644,8 @@ namespace TrabajoGitHub
         private MaterialSkin.Controls.MaterialLabel materialLabel6;
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox2;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox1;
+        private MaterialSkin.Controls.MaterialTextBox txtPrecioHora;
+        private MaterialSkin.Controls.MaterialTextBox txtHorasTrabajadas;
         private MaterialSkin.Controls.MaterialLabel materialLabel9;
         private MaterialSkin.Controls.MaterialLabel materialLabel8;
         private MaterialSkin.Controls.MaterialLabel materialLabel12;

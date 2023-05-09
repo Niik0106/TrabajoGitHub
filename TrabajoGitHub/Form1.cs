@@ -127,6 +127,16 @@ namespace TrabajoGitHub
 
         private void btnMostrar2_Click(object sender, EventArgs e)
         {
+            try
+            {
+                
+
+
+            }
+            catch
+            {
+
+            }
 
         }
 
