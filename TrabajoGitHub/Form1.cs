@@ -42,15 +42,17 @@ namespace TrabajoGitHub
         {
             try
             {
+                double sueldo = double.Parse(txtSueldoMensual.Text); 
+                int hijos = int.Parse(txtNumHijos.Text);
                 double hijo;
-                double retencionAFP, retencionSunat, sueldoNeto;
+                double retencionAFP, retencionSunat, sueldoNeto = 0;
                 string op = cboxAFP.Text;
-                hijo = AsignacionF(hijos);
+                hijo = Asignacion(hijos);
                 retencionAFP = RetencionAFP(op, sueldo);
                 retencionSunat = RetencionSunat(sueldo);
                 sueldoNeto = SueldoNeto(hijo, sueldoNeto, retencionAFP, retencionSunat);
                 txtRetencionAFP.Text = retencionAFP.ToString();
-                txtAsignacionFamiliar = hijo.ToString();
+                txtAsignacionFamiliar.Text = hijo.ToString();
                 txtRetencionSunat.Text = retencionSunat.ToString();
                 txtSueldoNeto.Text = sueldoNeto.ToString();
             }
@@ -133,9 +135,6 @@ namespace TrabajoGitHub
 
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }
